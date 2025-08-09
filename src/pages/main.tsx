@@ -63,7 +63,7 @@ export default function Main() {
       <motion.img
         src="/mini.png"
         alt="Mini"
-        className="w-[230px] z-10 cursor-pointer"
+        className="w-[200px] z-10 cursor-pointer"
         animate={controls}
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300 }}

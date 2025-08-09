@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import BalloonGame from "./baloon";
 
 
 export default function Letter() {
@@ -31,7 +32,10 @@ export default function Letter() {
                 backgroundImage: "url('/bg-three.png')",
                 }}
             >
-                
+            </div>
+
+            <div className="">
+                <BalloonGame/>
             </div>
     </div>
 )
