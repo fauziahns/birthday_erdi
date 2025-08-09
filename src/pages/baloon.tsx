@@ -35,7 +35,7 @@ const BalloonGame: React.FC = () => {
     "/1.png",
     "/2.png",
     "/3.png",
-    "/4.png",
+    "/1.png",
   ];
 
   const spawnBalloon = () => {
@@ -164,19 +164,16 @@ const BalloonGame: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-pink-200 to-yellow-100">
-      <h1 className="text-2xl font-bold text-pink-600 mb-2">
-        🎉 Happy Birthday! 🎂
-      </h1>
-      <p className="mb-2 text-sm text-gray-700">
-        Tangkap semua gambar sebanyak mungkin!
-      </p>
+    <div className="flex flex-col mx-auto max-w-[430px] w-full min-h-screen bg-cover bg-center bg-no-repeat shadow-lg  items-center justify-start "
+       style={{
+    backgroundImage: "url('/game.png')",
+    }}>
 
       <canvas
         ref={canvasRef}
         width={300}
         height={500}
-        className="border-4 border-pink-400 rounded-lg bg-white shadow-lg"
+        className="border-4 border-pink-400 rounded-lg bg-white shadow-lg mt-20"
         onClick={() => musicRef.current?.play()}
       />
 

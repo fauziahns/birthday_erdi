@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import BalloonGame from "./baloon";
+import { Link } from "react-router-dom";
 
 
 export default function Letter() {
@@ -34,9 +34,21 @@ export default function Letter() {
             >
             </div>
 
-            <div className="">
-                <BalloonGame/>
+            <div
+            className="mx-auto max-w-[430px] w-full min-h-screen bg-cover bg-center bg-no-repeat shadow-lg flex flex-col items-center"
+            style={{
+                backgroundImage: "url('/game1.png')",
+            }}
+            >
+                <div className="flex-1" />
+
+                <div className="mb-[300px]"> 
+                    <Link to={'/game'}>
+                        <img src="/play.png" alt="Let's Play" className="w-[200px] hover:scale-90" />
+                    </Link>
+                </div>
             </div>
+
     </div>
 )
 }
